@@ -1,7 +1,7 @@
 import { ThirdwebProvider } from '@thirdweb-dev/react';
 import { ChakraProvider } from "@chakra-ui/react";
 import Navbar from '../components/Navbar';
-import { Sepolia } from "@thirdweb-dev/chains";
+import { Bitrock } from "@thirdweb-dev/chains";
 
 // client_id = "d3488c8d08533b7d132b62a082f1d9f2"
 // secret_key = "ibQKgP_EvA-YN6lxuy0XE-UmZ-srl-ZRjWWWvFOQys-4BX2iu32DUZ4ZzziLPKqfW7jGiBWNanP12GuhtUCXRA"
@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<ThirdwebProvider
 			// activeChain={activeChain}
-			activeChain={ Sepolia } 
+			activeChain={ Bitrock } 
 			clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
 		>
 			<ChakraProvider>
